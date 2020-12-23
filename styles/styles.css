@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.header-content {
+    box-shadow: 0 0 60px -19px rgba(0,0,0,0.75);
+    display: flex;
+    justify-content: space-between;
+    padding-right: 15px;
+}
+
+.logo {
+    max-width: 100px;
+    object-fit: cover;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #000000;
+    padding: 10px;
+}
+
+.menu-item a:hover {
+    text-decoration: underline;
+}
+
+.intro {
+    background-image: url('../assets/intro.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta {
+    font-size: 19px;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    outline: none;
+    cursor: pointer;
+}
+
+.advantages {
+    padding: 15px 10%;
+}
+
+.advantages-list {
+    list-style-type: none;
+    position: relative;
+}
+
+.advantages-list li::before {
+    content: '';
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    background-image: url('../assets/check-mark.svg');
+}
+
