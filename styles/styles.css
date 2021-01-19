@@ -35,6 +35,13 @@ html, body, h1, h2, h3, h4, h5, h6, p
     margin-left: 10px;
 }
 
+@media screen and (max-width: 767px) and (min-width: 375px) {
+    .logo {
+        max-width: 65px;
+    }
+}
+
+
 .menu {
     list-style-type: none;
     padding: 0;
@@ -74,9 +81,11 @@ html, body, h1, h2, h3, h4, h5, h6, p
     margin-bottom: 0;
     font-weight: lighter;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .subtitle {
+    text-align: center;
     color: #ffffff;
     font-size: 30px;
     margin-bottom: 0;
@@ -85,6 +94,12 @@ html, body, h1, h2, h3, h4, h5, h6, p
 
 .buttons-container {
     display: flex;
+}
+
+@media screen and (max-width: 767px) and (min-width: 375px) {
+    .buttons-container {
+        display: initial;
+    }
 }
 
 .button {
@@ -126,6 +141,12 @@ html, body, h1, h2, h3, h4, h5, h6, p
     margin: 50px 0;
     display: flex;
     flex-wrap: wrap;
+}
+
+@media screen and (max-width: 767px) and (min-width: 375px) {
+    .advantages-items {
+        display: block;
+    }
 }
 
 .advantages-item {
@@ -179,6 +200,12 @@ html, body, h1, h2, h3, h4, h5, h6, p
     margin-bottom: 120px;
 }
 
+@media screen and (max-width: 767px) and (min-width: 375px) {
+    .about {
+        display: block;
+    }
+}
+
 .about-item {
     flex-basis: 48%;
     border-radius: 7px;
@@ -186,6 +213,13 @@ html, body, h1, h2, h3, h4, h5, h6, p
     text-align: center;
     background: #fff;
 }
+
+@media screen and (max-width: 767px) and (min-width: 375px) {
+    .about-item {
+        margin-bottom: 15px;
+    }
+}
+
 
 .about-item__content {
     padding: 20px;
@@ -219,10 +253,47 @@ html, body, h1, h2, h3, h4, h5, h6, p
     padding: 65px;
 }
 
+@media screen and (max-width: 767px) and (min-width: 375px) {
+    .sign-up-form-container {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 375px) {
+    .footer .title {
+        font-size: 35px;
+        margin: 0;
+        padding-top: 25px;
+    }
+
+
+    .footer .subtitle {
+        font-size: 20px;
+    }
+}
+
 .footer-form {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: 767px) and (min-width: 375px) {
+    .footer-form {
+        display: block;
+        margin-top: 15px;
+    }
+
+    .footer-form-input {
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .footer .button.secondary {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
 .footer-form-input {
